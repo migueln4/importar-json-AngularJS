@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="App">
+<head>
+	<meta charset="UTF-8">
+	<title>Probando Equipo A</title>
+</head>
+<body>
+
+<div ng-controller="contoladorDatos">
+	<h2>Equipo A</h2>
+	<p>{{equipo.historia}}</p>
+	<ul>
+		<li ng-repeat="integrante in equipo.integrantes">
+			{{integrante.rango}} {{integrante.nombre}} {{integrante.especialidad}}
+		</li>
+	</ul>
+</div>
+
+  <script src="angular.min.js"></script>
+<script src="app2.js"></script>
+</body>
+</html>
